@@ -1,0 +1,19 @@
+<h1>{{ title }}</h1>
+
+<p>¿Eres subscriptor de @KevinDavilaDev?</p>
+<div class="buttons">
+  <button
+    class="btn btn-yes"
+    [disabled]="disableButtons"
+    (click)="markResponse(true)"
+  >
+    ¡Sí :D!
+  </button>
+  <button
+    class="btn btn-no"
+    [disabled]="disableButtons"
+    (click)="markResponse(false)"
+  >
+    No :(
+  </button>
+</div>
